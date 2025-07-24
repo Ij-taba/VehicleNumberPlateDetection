@@ -1,0 +1,39 @@
+<html>
+<head>
+<script language="javascript">
+var q = "What is 10 + 10?";
+var a = 20;
+var correct ='<img src="../images/right.jpg">';
+var incorrect ='<img src="../images/wrong.png">';
+var response = prompt (q, "0");
+
+
+if(response != a)
+{
+	if(confirm ("wrong, press ok for another chance"))
+	{
+	response = prompt(q, "0");
+	}
+	else
+	{
+	alert ("Better luck for next time");
+	
+	}
+}
+else
+{
+alert ("Good Answer!")
+}
+
+var output = (response == a)? correct : incorrect;
+
+</script>
+
+</head>
+
+<body>
+<script>
+document.write(output);
+</script>
+</body>
+</html>
